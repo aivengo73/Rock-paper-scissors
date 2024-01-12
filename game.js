@@ -89,7 +89,9 @@
 				start();
 			}
 		};
+		
 	};
+	
 	window.rps = game;
 })();
 
