@@ -61,7 +61,7 @@
 				(userVariant === 'бумага' && computerVariant === 'камень') ||
 				(userVariant === 'ножницы' && computerVariant === 'бумага')
 			) {
-				alert(`Компьютер: ${computerVariant} \nВы: ${userVariant} \n \nВы: выграли`);
+				alert(`Компьютер: ${computerVariant} \nВы: ${userVariant} \n \nВы: выиграли`);
 				result.player++;
 
 			} else if (
@@ -69,7 +69,7 @@
 				(userVariant === 'бумага' && computerVariant === 'ножницы') ||
 				(userVariant === 'ножницы' && computerVariant === 'камень')
 			) {
-				alert(`Компьютер: ${computerVariant} \nВы: ${userVariant} \n \nКомпьютер: выграл`);
+				alert(`Компьютер: ${computerVariant} \nВы: ${userVariant} \n \nКомпьютер: выиграл`);
 				result.computer++
 			} 
 		};
