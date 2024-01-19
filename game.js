@@ -43,7 +43,6 @@
 			const exit = confirm('Точно хотите выйти?');
 			if (exit) {
 				alert(`Ваши очки: ${result.player} \nКомпьютер: ${result.computer}`);
-				console.log(`Ваши очки: ${result.player} \nКомпьютер: ${result.computer}`);
 				return;
 			} else {
 				start();
