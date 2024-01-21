@@ -1,8 +1,8 @@
 'use strict';
 (() => {
-	// const FIGURES_ENG = ['rock', 'scissors', 'paper'];
-	const FIGURES_RUS = ['камень', 'ножницы', 'бумага'];
 
+	const FIGURES_RUS = ['камень', 'ножницы', 'бумага'];
+	
 	const verifyResponseString = (str) => {
 	return	FIGURES_RUS.includes(str.toLocaleLowerCase());
 	};
@@ -57,18 +57,14 @@
 				result.tie++;
 			}
 			else if (
-				(userVariant === 'камень' && computerVariant === 'ножницы') || 
-				(userVariant === 'бумага' && computerVariant === 'камень') ||
-				(userVariant === 'ножницы' && computerVariant === 'бумага')
+				(userVariant === FIGURES_RUS[0] && computerVariant === FIGURES_RUS[1]) || 
+				(userVariant === FIGURES_RUS[2] && computerVariant === FIGURES_RUS[0]) ||
+				(userVariant === FIGURES_RUS[1] && computerVariant === FIGURES_RUS[2])
 			) {
 				alert(`Компьютер: ${computerVariant} \nВы: ${userVariant} \n \nВы: выиграли`);
 				result.player++;
 
-			} else if (
-				(userVariant === 'камень' && computerVariant === 'бумага') || 
-				(userVariant === 'бумага' && computerVariant === 'ножницы') ||
-				(userVariant === 'ножницы' && computerVariant === 'камень')
-			) {
+			} else {
 				alert(`Компьютер: ${computerVariant} \nВы: ${userVariant} \n \nКомпьютер: выиграл`);
 				result.computer++
 			} 
